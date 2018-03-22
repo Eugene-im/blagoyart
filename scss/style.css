@@ -137,6 +137,22 @@ button {
   font-style: normal;
   font-stretch: normal;
   unicode-range: U+0020-FFFD; }
+@font-face {
+  font-family: 'PTSans';
+  src: url("../fonts/PTSans-Regular_gdi.eot");
+  src: url("../fonts/PTSans-Regular_gdi.eot?#iefix") format("embedded-opentype"), url("../fonts/PTSans-Regular_gdi.woff") format("woff"), url("../fonts/PTSans-Regular_gdi.ttf") format("truetype"), url("../fonts/PTSans-Regular_gdi.svg#PTSans-Regular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-FB02; }
+@font-face {
+  font-family: 'PTSans';
+  src: url("../fonts/PTSans-Bold_gdi.eot");
+  src: url("../fonts/PTSans-Bold_gdi.eot?#iefix") format("embedded-opentype"), url("../fonts/PTSans-Bold_gdi.woff") format("woff"), url("../fonts/PTSans-Bold_gdi.ttf") format("truetype"), url("../fonts/PTSans-Bold_gdi.svg#PTSans-Bold") format("svg");
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-FB02; }
 /*
 ================================================================================
 |                                     HEADER                                   |
@@ -150,6 +166,9 @@ header {
   text-align: left;
   order: 1;
   -webkit-order: 1; }
+
+.header_kogo {
+  width: 247px; }
 
 /*
 ================================================================================

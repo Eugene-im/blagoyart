@@ -1,36 +1,112 @@
-
 /*
 ================================================================================
 |                                     HEADER                                   |
 ================================================================================
 */
-header{
-	background:#f0f0f0 url(../img/bg_header.jpg) no-repeat left top;
-	width:100%; height: 80px;
-	min-width: $min-width;
-	text-align:left;	
-	order: 1;	
-    -webkit-order: 1;	
+
+header {
+    background: #f0f0f0 url(../img/bg_header.jpg) no-repeat left top;
+    width: 100%;
+    // height: 80px;
+    min-width: $min-width;
+    text-align: left;
+    order: 1;
+    -webkit-order: 1;
+}
+
+.header__top {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-content:center;
+    padding: 10px 12px;
+}
+
+.header__bottom {
+    padding: 5px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    padding: 22px 12px;
 }
 
 
+.header__logo {
+    width: 247px;
+}
 
-@media screen and (max-width: 1200px) {
+.header__search,
+.header__logo,
+.header__search input,
+.header__phone,
+.header__timetable,
+.header__cart,
+.header__login{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.header__search {
+	    vertical-align: top;
+input{
 	
 }
-
-@media screen and (min-width: 992px){
-	
 }
 
-@media screen and (max-width: 991px) {
-	
+
+.phone__link {
+    color: #181616;
 }
 
-@media screen and (min-width: 768px) and (max-width: 991px) {
-	
+.header__timetable p {
+    padding: 0;
 }
 
-@media screen and (max-width: 767px) {
-	
+.header__date {
+    color: $gold-color;
 }
+
+.header__bottom {
+    border-top: 1px solid #dddfdf;
+    border-bottom: 1px solid #dddfdf;
+}
+
+.menu__item {
+    display: inline-block;
+}
+
+.menu__sub {
+    position: absolute;
+}
+
+.sub__item:before {
+    display: block;
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: 14px;
+    width: 6px;
+    height: 6px;
+    border: 1px solid #cf9c59;
+    border-radius: 50%;
+}
+
+.menu__s-marker:hover > .menu__sub {
+	display:block;
+}
+
+.menu__s-marker {}
+
+.menu__sub{
+	display:none;
+}
+
+@media screen and (max-width: 1200px) {}
+
+@media screen and (min-width: 992px) {}
+
+@media screen and (max-width: 991px) {}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {}
+
+@media screen and (max-width: 767px) {}

@@ -9,35 +9,122 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 
-<body class="loaded">
+<body>
+    <!-- <body class="loaded"> -->
     <!-- BEGIN BODY -->
     <div class="main-wrapper">
         <!-- BEGIN CONTENT -->
         <main class="content">
             <div class="wrapper">
+                <div class="slider__block">
+                    <div class="slider__item">
+                        <img src="img/slider_item.png" alt="">
+                        <div class="slider__text">
+                            <p class="text__rows">Новая коллекция</p>
+                            <p class="text__rows">SWAROVSKI уже здесь!</p>
+                        </div>
+                    </div>
+                    <div class="slider__item">
+                        <img src="img/slider_item.png" alt="">
+                        <div class="slider__text">
+                            <p class="text__rows">Новая коллекция</p>
+                            <p class="text__rows">SWAROVSKI уже здесь!</p>
+                        </div>
+                    </div>
+                    <div class="slider__item">
+                        <img src="img/slider_item.png" alt="">
+                        <div class="slider__text">
+                            <p class="text__rows">Новая коллекция</p>
+                            <p class="text__rows">SWAROVSKI уже здесь!</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </main>
         <!-- CONTENT EOF   -->
         <!-- BEGIN HEADER -->
         <header>
             <div class="wrapper">
-                <div class="header_top">
-                    <div class="header_logo">
-                        <a href="#">
-							<img src="img/logo.png" alt="blagoy-art.ru">
-							<span class="header_textlogo">Интернет-магазин «Благой арт»</span>
-						</a>
+                <div class="header__top">
+                    <div class="header__top_left">
+                        <div class="header__logo">
+                            <a href="#">
+								<img src="img/logo.png" alt="blagoy-art.ru">
+								<span class="header__textlogo">Интернет-магазин «Благой арт»</span>
+							</a>
+                        </div>
+                        <div class="header__search">
+                            <input type="search" placeholder="Введите название или артикул">
+                            <input type="submit">
+                        </div>
                     </div>
-                    <div class="header_search">
-                        <input type="search" placeholder="Введите название или артикул">
-                        <input type="submit">
-                    </div>
-                    <div class="header_contact">
-                        <div class="header_phone"><a href="tel:+799999999999"></a></div>
-                        <div class="header_timetable"><span class="gold">ПН-ПТ с 9:00 до 18:00</span><span>Доставка по РФ и СНГ</span></div>
+                    <div class="header__top_right">
+                        <div class="header__contact">
+                            <div class="header__phone"><a href="tel:+78007078139" class="phone__link">+7 (800) 707-81-39</a></div>
+                            <div class="header__timetable">
+                                <p class="header__date">ПН-ПТ с 9:00 до 18:00</p>
+                                <p>Доставка по РФ и СНГ</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="header_bottom"></div>
+                <div class="header__bottom">
+                    <div class="header__bottom_left">
+                        <ul class="header__menu">
+                            <li class="menu__burger menu__item menu__s-marker">
+                                <a href="#">КАТАЛОГ ТОВАРОВ</a>
+                                <div class="menu__sub">
+                                    <ul class="sub__menu">
+                                        <li class="sub__item menu__s-marker"><a href="#" class="menu__link">Свадебная бижутерия</a>
+                                            <div class="menu__sub">
+                                                <ul class="sub__menu">
+                                                    <li class="sub__item"><span class="sub__title">МУЖСКАЯ БИЖУТЕРИЯ</span></li>
+                                                    <li class="sub__item"><a href="#" class="menu__link">Браслеты</a></li>
+                                                    <li class="sub__item"><a href="#" class="menu__link">Кулоны</a></li>
+                                                    <li class="sub__item"><a href="#" class="menu__link">Зажимы и запонки</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="sub__item"><a href="#" class="menu__link">Аксессуары для волос</a></li>
+                                        <li class="sub__item"><a href="#" class="menu__link">Броши</a></li>
+                                        <li class="sub__item menu__s-marker"><a href="#" class="menu__link">Мужские аксессуары</a>
+                                            <div class="menu__sub">
+                                                <ul class="sub__menu">
+                                                    <li class="sub__item sub__title"><span class="sub__text">МУЖСКАЯ БИЖУТЕРИЯ</span></li>
+                                                    <li class="sub__item"><a href="#" class="menu__link">Браслеты</a></li>
+                                                    <li class="sub__item"><a href="#" class="menu__link">Кулоны</a></li>
+                                                    <li class="sub__item"><a href="#" class="menu__link">Зажимы и запонки</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="sub__item"><a href="#" class="menu__link">Клатчи</a></li>
+                                        <li class="sub__item"><a href="#" class="menu__link">Детская бижутерия</a></li>
+                                        <li class="sub__item"><a href="#" class="menu__link">Демонстрационное оборудование</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="menu__item"><a href="#" class="menu__link">УСЛОВИЯ РАБОТЫ</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">СКИДКИ</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">ОПЛАТА И ДОСТАВКА</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">ДОКУМЕНТЫ</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">КОНТАКТЫ</a></li>
+                        </ul>
+                    </div>
+                    <div class="header__bottom_right">
+                        <div class="header__cart">
+                            <div class="cart__icon"></div>
+                            <div class="cart__counter">
+                                <span class="counter__circle">10</span>
+                                <span class="counter__text">ТОВАРОВ /</span>
+                                <span class="counter__number">56 789 Р</span>
+                            </div>
+                        </div>
+                        <div class="header__login">
+                            <span class="login__icon"></span>
+                            <span class="login__text">ВОЙТИ</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </header>
         <!-- HEADER EOF   -->
@@ -52,12 +139,10 @@
     <!-- BODY EOF   -->
     <script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
     <script type="text/javascript" src="js/jquery-migrate-1.4.1.min.js"></script>
-    <!--
-	<script type="text/javascript" src="js/components/jquery.fancybox.js" ></script>
-	<script type="text/javascript" src="js/components/jquery.formstyler.js" ></script>
-	<script type="text/javascript" src="js/components/slick.js" ></script>
-	<script type="text/javascript" src="js/components/jquery.mCustomScrollbar.js" ></script>
-	-->
+    <!-- <script type="text/javascript" src="js/components/jquery.fancybox.js" ></script> -->
+    <!-- <script type="text/javascript" src="js/components/jquery.formstyler.js" ></script> -->
+    <script type="text/javascript" src="js/components/slick.js"></script>
+    <!-- <script type="text/javascript" src="js/components/jquery.mCustomScrollbar.js" ></script> -->
     <script type="text/javascript" src="js/custom.js"></script>
 </body>
 
