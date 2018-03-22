@@ -55,8 +55,8 @@ $(function(){
 			speed: 300,
 			slidesToShow: 1,
 			slidesToScroll: 1,
-			prevArrow: '<button type="button" data-role="none" class="slick-prev" aria-label="Previous" tabindex="0" role="button"><div></div></button>',
-            nextArrow: '<button type="button" data-role="none" class="slick-next" aria-label="Next" tabindex="0" role="button"><div></div></button>',
+			prevArrow: '<button type="button" data-role="none" class="slick-prev" aria-label="Previous" tabindex="0" role="button"><i></i></button>',
+            nextArrow: '<button type="button" data-role="none" class="slick-next" aria-label="Next" tabindex="0" role="button"><i></i></button>',
 
 			responsive: [
 				{

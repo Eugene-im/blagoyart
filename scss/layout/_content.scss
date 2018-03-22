@@ -27,6 +27,10 @@
     position: relative;
 }
 
+main .wrapper {
+    max-width: 1354px;
+}
+
 
 
 /* titles */
@@ -60,6 +64,7 @@ h3 {
 
 
 
+
 /* text position */
 
 .text-left {
@@ -77,6 +82,7 @@ h3 {
 .nowrap {
     white-space: nowrap!important;
 }
+
 
 
 
@@ -106,6 +112,7 @@ h3 {
 
 
 
+
 /*
 ================================================================================
 |                                     CONTENT                                 |
@@ -123,8 +130,8 @@ h3 {
     background: #fff000;
 }
 
-.slider__block{
-	margin-top:31px;
+.slider__block {
+    margin-top: 31px;
 }
 
 .slider__item {
@@ -138,8 +145,14 @@ h3 {
     top: 50%;
     left: 70px;
     transform: translate(0, -50%);
-    background-color:$gold-color;
+    background-color: $gold-color;
     opacity: 0.88;
+    padding: 20px 30px;
+    p {
+        color: #ffffff;
+        font-size: 43px;
+        line-height: 47.66px;
+    }
 }
 
 .slick-arrow {
@@ -157,6 +170,9 @@ h3 {
     top: 50%;
     transform: translate(0, -77%);
     padding: 0;
+    >i {
+        display: block;
+    }
 }
 
 
@@ -164,7 +180,7 @@ h3 {
     &:hover {
         background-color: #ffffff;
     }
-    >div {
+    >i {
         width: 14px;
         height: 28px;
         background: url(../img/sprite.png) center center no-repeat;
@@ -177,35 +193,39 @@ h3 {
 
 .slick-prev {
     left: 0;
-    >div {
+    >i {
         background-position: -175px -1px;
     }
-    &:hover>div {
+    &:hover>i {
         background-position: -175px -34px;
     }
 }
 
 .slick-next {
     right: 0;
-    >div {
+    >i {
         background-position: -201px -1px;
     }
-    &:hover>div {
+    &:hover>i {
         background-position: -201px -34px;
     }
 }
 
-.slick-dots li {
-    display: inline-block;
-    margin-right: 22px;
-    button {
-        font-size: 0;
-        border: 0;
-        border-radius: 50%;
-        width: 18px;
-        height: 18px;
-        background-color: #cb944c;
-        opacity: 0.33;
+.slick-dots {
+    text-align: center;
+    margin: 47px 0 32px 0;
+    li {
+        display: inline-block;
+        margin-right: 22px;
+        button {
+            font-size: 0;
+            border: 0;
+            border-radius: 50%;
+            width: 18px;
+            height: 18px;
+            background-color: #cb944c;
+            opacity: 0.33;
+        }
     }
 }
 
@@ -213,13 +233,8 @@ li.slick-active>button {
     opacity: 1;
 }
 
-.text__rows{
-	padding:0;
-}
-
-.slick-dots{
-	text-align:center;
-	margin-top: 47px
+.text__rows {
+    padding: 0;
 }
 
 @media screen and (-ms-high-contrast: active),

@@ -9,8 +9,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 
-<body>
-    <!-- <body class="loaded"> -->
+<body class="loaded">
     <!-- BEGIN BODY -->
     <div class="main-wrapper">
         <!-- BEGIN CONTENT -->
@@ -45,86 +44,102 @@
         <!-- BEGIN HEADER -->
         <header>
             <div class="wrapper">
-                <div class="header__top">
-                    <div class="header__top_left">
-                        <div class="header__logo">
-                            <a href="#">
+                    <div class="header__top">
+                        <div class="header__top_left">
+                            <div class="header__logo">
+                                <a href="#">
 								<img src="img/logo.png" alt="blagoy-art.ru">
 								<span class="header__textlogo">Интернет-магазин «Благой арт»</span>
 							</a>
+                            </div>
+                            <div class="header__search">
+                                <input type="search" placeholder="Введите название или артикул">
+                                <input type="submit">
+                            </div>
                         </div>
-                        <div class="header__search">
-                            <input type="search" placeholder="Введите название или артикул">
-                            <input type="submit">
-                        </div>
-                    </div>
-                    <div class="header__top_right">
-                        <div class="header__contact">
-                            <div class="header__phone"><a href="tel:+78007078139" class="phone__link">+7 (800) 707-81-39</a></div>
-                            <div class="header__timetable">
-                                <p class="header__date">ПН-ПТ с 9:00 до 18:00</p>
-                                <p>Доставка по РФ и СНГ</p>
+                        <div class="header__top_right">
+                            <div class="header__contact">
+                                <div class="header__phone"><a href="tel:+78007078139" class="phone__link">+7 (800) 707-81-39</a></div>
+                                <div class="header__timetable">
+                                    <p class="header__date">ПН-ПТ с 9:00 до 18:00</p>
+                                    <p>Доставка по РФ и СНГ</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="header__bottom">
-                    <div class="header__bottom_left">
-                        <ul class="header__menu">
-                            <li class="menu__burger menu__item menu__s-marker">
-                                <a href="#">КАТАЛОГ ТОВАРОВ</a>
-                                <div class="menu__sub">
-                                    <ul class="sub__menu">
-                                        <li class="sub__item menu__s-marker"><a href="#" class="menu__link">Свадебная бижутерия</a>
-                                            <div class="menu__sub">
-                                                <ul class="sub__menu">
-                                                    <li class="sub__item"><span class="sub__title">МУЖСКАЯ БИЖУТЕРИЯ</span></li>
-                                                    <li class="sub__item"><a href="#" class="menu__link">Браслеты</a></li>
-                                                    <li class="sub__item"><a href="#" class="menu__link">Кулоны</a></li>
-                                                    <li class="sub__item"><a href="#" class="menu__link">Зажимы и запонки</a></li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                        <li class="sub__item"><a href="#" class="menu__link">Аксессуары для волос</a></li>
-                                        <li class="sub__item"><a href="#" class="menu__link">Броши</a></li>
-                                        <li class="sub__item menu__s-marker"><a href="#" class="menu__link">Мужские аксессуары</a>
-                                            <div class="menu__sub">
-                                                <ul class="sub__menu">
-                                                    <li class="sub__item sub__title"><span class="sub__text">МУЖСКАЯ БИЖУТЕРИЯ</span></li>
-                                                    <li class="sub__item"><a href="#" class="menu__link">Браслеты</a></li>
-                                                    <li class="sub__item"><a href="#" class="menu__link">Кулоны</a></li>
-                                                    <li class="sub__item"><a href="#" class="menu__link">Зажимы и запонки</a></li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                        <li class="sub__item"><a href="#" class="menu__link">Клатчи</a></li>
-                                        <li class="sub__item"><a href="#" class="menu__link">Детская бижутерия</a></li>
-                                        <li class="sub__item"><a href="#" class="menu__link">Демонстрационное оборудование</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="menu__item"><a href="#" class="menu__link">УСЛОВИЯ РАБОТЫ</a></li>
-                            <li class="menu__item"><a href="#" class="menu__link">СКИДКИ</a></li>
-                            <li class="menu__item"><a href="#" class="menu__link">ОПЛАТА И ДОСТАВКА</a></li>
-                            <li class="menu__item"><a href="#" class="menu__link">ДОКУМЕНТЫ</a></li>
-                            <li class="menu__item"><a href="#" class="menu__link">КОНТАКТЫ</a></li>
-                        </ul>
-                    </div>
-                    <div class="header__bottom_right">
-                        <div class="header__cart">
-                            <div class="cart__icon"></div>
-                            <div class="cart__counter">
-                                <span class="counter__circle">10</span>
+                    <div class="header__bottom">
+                        <div class="header__bottom_left">
+                            <ul class="header__menu">
+                                <li class="menu__item menu__s-m">
+                                    <a href="#" class="menu__link">
+	                                <i class="menu__burger"></i>
+	                                <span>КАТАЛОГ ТОВАРОВ</span>
+	                                <i class="menu__s-marker_type_1"></i>
+                            	</a>
+                                    <div class="menu__sub">
+                                        <ul class="sub__menu">
+                                            <li class="sub__item menu__s-m">
+                                                <a href="#" class="menu__link">
+                                        		Свадебная бижутерия
+                                        		<i class="	menu__s-marker_type_2"></i>
+                                    		</a>
+                                                <div class="menu__sub">
+                                                    <ul class="sub__menu">
+                                                        <li class="sub__item"><span class="sub__title">МУЖСКАЯ БИЖУТЕРИЯ</span></li>
+                                                        <li class="sub__item"><a href="#" class="menu__link">Браслеты</a></li>
+                                                        <li class="sub__item"><a href="#" class="menu__link">Кулоны</a></li>
+                                                        <li class="sub__item"><a href="#" class="menu__link">Зажимы и запонки</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="sub__item"><a href="#" class="menu__link">Аксессуары для волос</a></li>
+                                            <li class="sub__item"><a href="#" class="menu__link">Броши</a></li>
+                                            <li class="sub__item  menu__s-m">
+                                                <a href="#" class="menu__link">
+                                        		Мужские аксессуары
+                                        		<i class="	menu__s-marker_type_2"></i> 
+                                    		</a>
+                                                <div class="menu__sub">
+                                                    <ul class="sub__menu">
+                                                        <li class="sub__item sub__title"><span class="sub__text">МУЖСКАЯ БИЖУТЕРИЯ</span></li>
+                                                        <li class="sub__item"><a href="#" class="menu__link">Браслеты</a></li>
+                                                        <li class="sub__item"><a href="#" class="menu__link">Кулоны</a></li>
+                                                        <li class="sub__item"><a href="#" class="menu__link">Зажимы и запонки</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="sub__item"><a href="#" class="menu__link">Клатчи</a></li>
+                                            <li class="sub__item"><a href="#" class="menu__link">Детская бижутерия</a></li>
+                                            <li class="sub__item"><a href="#" class="menu__link">Демонстрационное оборудование</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="menu__item"><a href="#" class="menu__link">УСЛОВИЯ РАБОТЫ</a></li>
+                                <li class="menu__item"><a href="#" class="menu__link">СКИДКИ</a></li>
+                                <li class="menu__item"><a href="#" class="menu__link">ОПЛАТА И ДОСТАВКА</a></li>
+                                <li class="menu__item"><a href="#" class="menu__link">ДОКУМЕНТЫ</a></li>
+                                <li class="menu__item"><a href="#" class="menu__link">КОНТАКТЫ</a></li>
+                            </ul>
+                        </div>
+                        <div class="header__bottom_right">
+                            <div class="header__cart">
+                                <a href="#" class="cart__link">
+                            <i class="cart__icon"></i>
+                            <i class="cart__counter">
+                                <i class="counter__circle">10</i>
                                 <span class="counter__text">ТОВАРОВ /</span>
                                 <span class="counter__number">56 789 Р</span>
+                            </i>
+                            </a>
+                            </div>
+                            <div class="header__login">
+                                <a href="#" class="login__link">
+                            	<i class="login__icon"></i>
+                            	<span class="login__text">ВОЙТИ</span>
+                        	</a>
                             </div>
                         </div>
-                        <div class="header__login">
-                            <span class="login__icon"></span>
-                            <span class="login__text">ВОЙТИ</span>
-                        </div>
                     </div>
-                </div>
             </div>
         </header>
         <!-- HEADER EOF   -->

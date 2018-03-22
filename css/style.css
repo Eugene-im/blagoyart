@@ -3,7 +3,7 @@
 body {
   margin: 0px;
   padding: 0px;
-  font-family: Arial, sans-serif;
+  font-family: "PTSans", sans-serif;
   background-color: #FFF;
   height: 100%;
   line-height: 1;
@@ -298,6 +298,16 @@ header {
   padding: 22px 12px;
 }
 
+header .wrapper {
+  max-width: 1240px;
+  width: 100%;
+}
+header i {
+  display: inline-block;
+  vertical-align: middle;
+  font-style: normal;
+}
+
 .header__logo {
   width: 247px;
 }
@@ -334,8 +344,31 @@ header {
   border-bottom: 1px solid #dddfdf;
 }
 
+.menu__burger {
+  width: 16px;
+  height: 12px;
+  background: url(../img/sprite.png) center center no-repeat;
+  background-position: -90px -1px;
+}
+
+.menu__s-marker_type_1 {
+  width: 11px;
+  height: 7px;
+  background: url(../img/sprite.png) center center no-repeat;
+  background-position: -70px -1px;
+}
+
+.menu__s-marker_type_2 {
+  width: 11px;
+  height: 7px;
+  background: url(../img/sprite.png) center center no-repeat;
+  background-position: -70px -1px;
+  transform: rotate(-90deg);
+}
+
 .menu__item {
   display: inline-block;
+  margin-right: 20px;
 }
 
 .menu__sub {
@@ -354,12 +387,36 @@ header {
   border-radius: 50%;
 }
 
-.menu__s-marker:hover > .menu__sub {
+.menu__s-m:hover > .menu__sub {
   display: block;
 }
 
 .menu__sub {
   display: none;
+}
+
+.cart__icon {
+  width: 23px;
+  height: 23px;
+  background: url(../img/sprite.png) center center no-repeat;
+  background-position: -33px -1px;
+}
+
+.counter__circle {
+  width: 23px;
+  height: 21px;
+  border-radius: 50%;
+  background-color: #cb944c;
+  line-height: 21px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.login__icon {
+  width: 19px;
+  height: 17px;
+  background: url(../img/sprite.png) center center no-repeat;
+  background-position: -120px -1px;
 }
 
 /*
@@ -405,6 +462,10 @@ footer {
   position: relative;
 }
 
+main .wrapper {
+  max-width: 1354px;
+}
+
 /* titles */
 p {
   font-size: 13px;
@@ -418,7 +479,7 @@ h1 {
   font-size: 36px;
   line-height: 42px;
   color: #000;
-  font-family: "Open Sans", sans-serif;
+  font-family: "PTSans", sans-serif;
   padding: 15px 0 15px 0;
   font-weight: 400;
 }
@@ -427,7 +488,7 @@ h2 {
   font-size: 32px;
   line-height: 37px;
   color: #000;
-  font-family: "Open Sans", sans-serif;
+  font-family: "PTSans", sans-serif;
   padding: 15px 0 15px 0;
   font-weight: 400;
 }
@@ -436,7 +497,7 @@ h3 {
   font-size: 28px;
   line-height: 32px;
   color: #000;
-  font-family: "Open Sans", sans-serif;
+  font-family: "PTSans", sans-serif;
   padding: 15px 0 15px 0;
   font-weight: 400;
 }
@@ -512,6 +573,12 @@ h3 {
   transform: translate(0, -50%);
   background-color: #cb944c;
   opacity: 0.88;
+  padding: 20px 30px;
+}
+.slider__text p {
+  color: #ffffff;
+  font-size: 43px;
+  line-height: 47.66px;
 }
 
 .slick-arrow {
@@ -530,11 +597,14 @@ h3 {
   transform: translate(0, -77%);
   padding: 0;
 }
+.slick-arrow > i {
+  display: block;
+}
 
 .slick-arrow:hover {
   background-color: #ffffff;
 }
-.slick-arrow > div {
+.slick-arrow > i {
   width: 14px;
   height: 28px;
   background: url(../img/sprite.png) center center no-repeat;
@@ -547,23 +617,27 @@ h3 {
 .slick-prev {
   left: 0;
 }
-.slick-prev > div {
+.slick-prev > i {
   background-position: -175px -1px;
 }
-.slick-prev:hover > div {
+.slick-prev:hover > i {
   background-position: -175px -34px;
 }
 
 .slick-next {
   right: 0;
 }
-.slick-next > div {
+.slick-next > i {
   background-position: -201px -1px;
 }
-.slick-next:hover > div {
+.slick-next:hover > i {
   background-position: -201px -34px;
 }
 
+.slick-dots {
+  text-align: center;
+  margin: 47px 0 32px 0;
+}
 .slick-dots li {
   display: inline-block;
   margin-right: 22px;
@@ -584,11 +658,6 @@ li.slick-active > button {
 
 .text__rows {
   padding: 0;
-}
-
-.slick-dots {
-  text-align: center;
-  margin-top: 47px;
 }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {

@@ -6,8 +6,7 @@
 
 header {
     background: #f0f0f0 url(../img/bg_header.jpg) no-repeat left top;
-    width: 100%;
-    // height: 80px;
+    width: 100%; // height: 80px;
     min-width: $min-width;
     text-align: left;
     order: 1;
@@ -17,8 +16,8 @@ header {
 .header__top {
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
-    align-content:center;
+    justify-content: space-between;
+    align-content: center;
     padding: 10px 12px;
 }
 
@@ -26,11 +25,21 @@ header {
     padding: 5px 0;
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
+    justify-content: space-between;
     padding: 22px 12px;
 }
 
-
+header {
+	.wrapper{
+		max-width:1240px;
+		width:100%;
+	}
+	i {
+    display: inline-block;
+    vertical-align: middle;
+    font-style: normal;
+}
+}
 .header__logo {
     width: 247px;
 }
@@ -41,16 +50,16 @@ header {
 .header__phone,
 .header__timetable,
 .header__cart,
-.header__login{
+// .cart__icon,
+// .cart__
+.header__login {
     display: inline-block;
     vertical-align: middle;
 }
 
 .header__search {
-	    vertical-align: top;
-input{
-	
-}
+    vertical-align: top;
+    input {}
 }
 
 
@@ -71,8 +80,31 @@ input{
     border-bottom: 1px solid #dddfdf;
 }
 
+.menu__burger {
+    width: 16px;
+    height: 12px;
+    background: url(../img/sprite.png) center center no-repeat;
+    background-position: -90px -1px;
+}
+
+.menu__s-marker_type_1 {
+    width: 11px;
+    height: 7px;
+    background: url(../img/sprite.png) center center no-repeat;
+    background-position: -70px -1px;
+}
+
+.menu__s-marker_type_2 {
+    width: 11px;
+    height: 7px;
+    background: url(../img/sprite.png) center center no-repeat;
+    background-position: -70px -1px;
+    transform: rotate(-90deg);
+}
+
 .menu__item {
     display: inline-block;
+    margin-right: 20px;
 }
 
 .menu__sub {
@@ -91,14 +123,38 @@ input{
     border-radius: 50%;
 }
 
-.menu__s-marker:hover > .menu__sub {
-	display:block;
+.menu__s-m:hover>.menu__sub {
+    display: block;
 }
 
 .menu__s-marker {}
 
-.menu__sub{
-	display:none;
+.menu__sub {
+    display: none;
+}
+
+.cart__icon {
+    width: 23px;
+    height: 23px;
+    background: url(../img/sprite.png) center center no-repeat;
+    background-position: -33px -1px;
+}
+
+.counter__circle {
+    width: 23px;
+    height: 21px;
+    border-radius: 50%;
+    background-color: $gold-color;
+    line-height: 21px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.login__icon {
+    width: 19px;
+    height: 17px;
+    background: url(../img/sprite.png) center center no-repeat;
+    background-position: -120px -1px;
 }
 
 @media screen and (max-width: 1200px) {}
