@@ -29,6 +29,7 @@
 
 main .wrapper {
     max-width: 1354px;
+        box-sizing: content-box;
 }
 
 
@@ -127,7 +128,7 @@ h3 {
     -webkit-order: 2;
     flex-grow: 1;
     -webkit-flex-grow: 1;
-    background: #fff000;
+    background: #fff;
 }
 
 .slider__block {
