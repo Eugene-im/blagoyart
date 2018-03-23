@@ -60,19 +60,19 @@ $(function(){
 
 			responsive: [
 				{
-				  breakpoint: 1024,
+				  breakpoint: 991,
 				  settings: {
 					slidesToShow: 1,
 					slidesToScroll: 1,
 					infinite: true,
-					dots: true
+					dots: false
 				  }
 				}//<--!!!!!--->
-				// },
-				// {
-				//   breakpoint: 600,
-				//   settings: "unslick"
-				// }				
+			// 	// },
+			// 	// {
+			// 	//   breakpoint: 600,
+			// 	//   settings: "unslick"
+			// 	// }				
 			]
 		});
 	};
