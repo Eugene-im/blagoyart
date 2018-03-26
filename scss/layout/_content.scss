@@ -28,7 +28,7 @@
     }
 
     main .wrapper {
-        max-width: 1354px;
+        max-width: 1432px;
     }
     /* titles */
 
@@ -143,7 +143,7 @@
 
     .slick-arrow {
         width: 37px;
-        height: 128px;
+        height: 125px;
         background-color: #d2a66b;
         opacity: 0.88;
         border: 0;
@@ -164,8 +164,7 @@
             width: 14px;
             height: 28px;
             background: url(../img/sprite.png) center center no-repeat;
-            top: 50%;
-            left: 50%;
+            top: 51%;
             position: absolute;
             transform: translate(-50%, -50%);
         }
@@ -176,6 +175,7 @@
         left: 0;
         >i {
             background-position: -175px -1px;
+            left: 38%;
         }
         &:hover>i {
             background-position: -175px -34px;
@@ -186,6 +186,7 @@
         right: 0;
         >i {
             background-position: -201px -1px;
+            left: 56%;
         }
         &:hover>i {
             background-position: -201px -34px;
@@ -197,7 +198,7 @@
         margin: 47px 0 32px 0;
         li {
             display: inline-block;
-            margin-right: 22px;
+            margin: 0 11px;
             button {
                 font-size: 0;
                 border: 0;
@@ -235,6 +236,19 @@
     @media screen and (max-width: 991px) {}
 
     @media screen and (min-width: 768px) and (max-width: 991px) {
+    	.slick-slide img {
+    max-height: 168px;}
+        .slider__block {
+            margin-top: 21px;
+        }
+
+        main .wrapper {
+            padding: 0 13px;
+        }
+
+        .wrapper {
+            padding: 0 18px;
+        }
         .slider__text {
             padding: 10px 24px 10px 18px;
             p {
@@ -272,6 +286,13 @@
     }
 
     @media screen and (max-width: 767px) {
+    	    .slider__block {
+    margin-top: 0px;
+}
+.slick-slide img {
+    width: 100%;
+    /* height: auto; */
+    min-height: 123px;}
         .slider__text {
             padding: 7px 21px 6px 10px;
             p {
@@ -279,7 +300,7 @@
                 line-height: 15px;
             }
         }
-                .slick-arrow {
+        .slick-arrow {
             transform: translate(0, -50%);
             width: 20px;
             height: 28px;
@@ -290,7 +311,7 @@
                 background-size: 2449%;
             }
         }
-                .slick-prev {
+        .slick-prev {
             >i {
                 background-position: -95px -1px;
             }

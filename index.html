@@ -44,25 +44,38 @@
         <!-- BEGIN HEADER -->
         <header>
             <div class="wrapper">
-            	
+            	<div class="header__top_show_mobile">
+            		<ul class="header__menu">
+                            <li class="menu__item"><a href="#" class="menu__link"><i class="burger__icon"></i></a></li>
+                            <li class="menu__item"><a href="#" class="menu__link"><i class="home__icon"></i></a></li>
+                            <li class="menu__item"><a href="#" class="menu__link"><i class="search__icon"></i></a></li>
+                            <li class="menu__item"><a href="#" class="menu__link"><i class="cart__icon"></i></a></li>
+                            <li class="menu__item"><a href="#" class="menu__link"><i class="login__icon"></i></a></li>
+                            <li class="menu__item"><a href="#" class="menu__link"><i class="call__icon"></i></a></li>
+                        </ul>
+
+            	</div>
                 <div class="header__top">
-                    <div class="header__top_left">
                         <div class="header__logo">
                             <a href="#">
 									<img src="img/logo.png" alt="blagoy-art.ru">
 									<span class="header__textlogo">Интернет-магазин «Благой арт»</span>
 								</a>
                         </div>
-
-                    </div>
-                    <div class="header__top_right header__top_hide_mobile">
-                        <div class="header__contact">
+                        <div class="header__search header__top_hide_mobile">
+                            <form action="" method="GET">
+                                <div class="search__field">
+                                    <input type="search" name="search" class="search__input" placeholder="Введите название или артикул">
+                                    <button class="search__button"> <i class="search__icon"></i></button>
+                                </div>
+                            </form>
+                        </div>
+                    <div class="header__contact header__top_hide_mobile">
                             <div class="header__phone"><a href="tel:+78007078139" class="phone__link">+7 (800) 707-81-39</a></div>
                             <div class="header__timetable">
                                 <p class="header__date">ПН-ПТ с 9:00 до 18:00</p>
                                 <p>Доставка по РФ и СНГ</p>
                             </div>
-                        </div>
                     </div>
                 </div>
                 <div class="header__middle_show_tablet">
