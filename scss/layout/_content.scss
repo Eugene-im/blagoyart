@@ -236,8 +236,9 @@
     @media screen and (max-width: 991px) {}
 
     @media screen and (min-width: 768px) and (max-width: 991px) {
-    	.slick-slide img {
-    max-height: 168px;}
+        .slick-slide img {
+            max-height: 168px;
+        }
         .slider__block {
             margin-top: 21px;
         }
@@ -286,13 +287,13 @@
     }
 
     @media screen and (max-width: 767px) {
-    	    .slider__block {
-    margin-top: 0px;
-}
-.slick-slide img {
-    width: 100%;
-    /* height: auto; */
-    min-height: 123px;}
+        .slider__block {
+            margin-top: 0px;
+        }
+        .slick-slide img {
+            width: 100%;
+            min-height: 123px;
+        }
         .slider__text {
             padding: 7px 21px 6px 10px;
             p {
