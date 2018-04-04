@@ -598,6 +598,15 @@ header i {
     padding-bottom: 7px;
   }
 }
+@media screen and (max-width: 1024px) {
+  .phone__link {
+    font-size: 18px;
+  }
+
+  .header__timetable p {
+    font-size: 13px;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .header__top {
     padding: 24px 12px 5px 12px;
